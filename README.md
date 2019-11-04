@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 Download dataset:
 ```
-curl https://www.openml.org/data/get_csv/52607/baseball-pitcher.arff > data.csv
+./bin/fetch_data.sh
 ```
 
 ### Usage
