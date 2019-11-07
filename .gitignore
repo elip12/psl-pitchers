@@ -3,3 +3,5 @@ raw/
 *.DS_Store
 *__pycache__
 *.jar
+psl/*.txt
+inferred-predicates/

@@ -39,7 +39,7 @@ def main():
     print(acc)
 
     # write match test
-    pd.DataFrame(testY.index).to_csv('preprocessed/match_test.txt', header=False, sep='\t', index=False)
+    pd.DataFrame(testY.index).to_csv('psl/match_test.txt', header=False, sep='\t', index=False)
 
     # write match obs
     pd.DataFrame(trainY).to_csv('preprocessed/match_train.txt', header=False, sep='\t')

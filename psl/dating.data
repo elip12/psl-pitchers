@@ -8,7 +8,7 @@ observations:
     Match: ../preprocessed/match_train.txt
     
 targets:
-    ./match_test.txt
+    Match: ./match_test.txt
 
 truth:
-    ./match_truth.txt
+    Match: ./match_truth.txt
