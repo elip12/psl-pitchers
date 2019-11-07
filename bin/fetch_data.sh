@@ -1,1 +1,1 @@
-curl "https://www.openml.org/data/get_csv/52607/baseball-pitcher.arff" > ./raw/data.csv
+curl "https://www.openml.org/data/get_csv/13153954/speeddating.arff" > ./raw/data.csv
