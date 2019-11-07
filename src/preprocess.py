@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier as RFC
 import numpy as np
 
+
 def main():
     cols = ['d_age', 'samerace', 'attractive_partner',
             'interests_correlate', 'like', 'guess_prob_liked', 'match']
