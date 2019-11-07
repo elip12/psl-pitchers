@@ -1,0 +1,4 @@
+0.1: !Match(r) ^2
+1.0: RF(r) >> Match(r) ^2
+1.0: Match(r1) & Sim(r1, r2) >> Match(r2) ^2
+

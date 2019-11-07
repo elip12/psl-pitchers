@@ -1,0 +1,14 @@
+predicates:
+    Sim/2: closed
+    RF/1: closed
+    Match/1: open
+observations:
+    Sim: ../preprocessed/sim.txt
+    RF: ../preprocessed/rf.txt
+    Match: ../preprocessed/match_train.txt
+    
+targets:
+    ./match_test.txt
+
+truth:
+    ./match_truth.txt

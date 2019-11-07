@@ -1,9 +1,0 @@
-predicates:
-
-observations:
-
-targets:
-    ./psl-targets.txt
-
-truth:
-    ./psl-truth.txt
