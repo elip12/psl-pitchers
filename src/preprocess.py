@@ -5,7 +5,8 @@ import numpy as np
 
 def main():
     cols = ['d_age', 'samerace', 'attractive_partner',
-            'interests_correlate', 'like', 'guess_prob_liked', 'match']
+            'interests_correlate', 'like', 'guess_prob_liked', 'match',
+            'attractive', 'attractive_partner']
     df = pd.read_csv('raw/data.csv', usecols=cols)
     
     df = df.replace('?', np.nan)
@@ -50,12 +51,13 @@ def main():
     outdf.to_csv('preprocessed/rf.txt', header=False, sep='\t')
 
     # write similarities
+    
     out = []
-    t = testX['interests_correlate']
+    t = testX['attractive'].astype(np.float64) - testX['attractive_partner'].astype(np.float64)
     for i, r in t.items():
         for j, rr in t.items():
-            rr = float(rr) / 2 + 0.5
-            out.append(f'{i}\t{j}\t{rr}')
+            sim = abs(r - rr)
+            out.append(f'{i}\t{j}\t{sim}')
     s = '\n'.join(out)
     with open('preprocessed/sim.txt', 'w') as f:
         f.write(s)
